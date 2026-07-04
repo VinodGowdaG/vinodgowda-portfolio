@@ -112,7 +112,7 @@ export default function HeroImage() {
           width={320}
           height={420}
           priority
-          className="w-[250px] rounded-[24px] object-cover lg:w-[320px]"
+          className="w-[250px] h-auto rounded-[24px] object-cover lg:w-[320px]"
         />
       </motion.div>
 

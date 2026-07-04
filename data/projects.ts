@@ -21,12 +21,19 @@ challenge:
 solution:
   "Designed a modern website, created brochures, optimized Google Business Profile, implemented SEO, and developed a complete digital marketing strategy.",
 
-  technologies: ["Next.js"],
+  technologies: ["Next.js",
+    "Tailwind CSS",
+    "Figma",
+    "SEO",
+    "Branding",
+    "Digital Marketing"
+  ],
 
-  result: "250+ Leads",
+
+  result: "150+ Leads",
 
   gallery: [
-    "/images/projects/mbs-properties.png",
+    "/images/projects/mbs-properties-1.png",
     "/images/projects/mbs-properties-2.png",
     "/images/projects/mbs-properties-3.png",
     "/images/projects/mbs-properties-4.png",
@@ -34,7 +41,7 @@ solution:
   stats: [
   {
     icon: "🚀",
-    value: 250,
+    value: 150,
     suffix: "+",
     label: "Qualified Leads",
   },
@@ -73,12 +80,12 @@ solution:
 
   heroImage: "/images/projects/mbs-construction-banner.png",
 
-  overview: "...",
-  challenge: "...",
-  solution: "...",
+  overview: "MBS Construction required a strong digital presence to showcase their industrial construction projects, attract clients, and establish credibility in the market.",
+  challenge: "The company lacked a professional website, consistent branding, and effective marketing materials to compete in the industrial construction sector.",
+  solution: "Developed a modern website, designed brochures, created social media marketing campaigns, and established a cohesive brand identity.",
 
   gallery: [
-    "/images/projects/mbs-construction.png",
+    "/images/projects/mbs-construction-1.png",
     "/images/projects/mbs-construction-2.png",
     "/images/projects/mbs-construction-3.png",
     "/images/projects/mbs-construction-4.png",
@@ -160,9 +167,10 @@ solution:
   result: "National Brand Presence",
 
   gallery: [
-    "/images/projects/mbs-brightech.png",
-    "/images/projects/mbs-brightech.png",
-    "/images/projects/mbs-brightech.png",
+    "/images/projects/mbs-brightech-1.png",
+    "/images/projects/mbs-brightech-2.png",
+    "/images/projects/mbs-brightech-3.png",
+    "/images/projects/mbs-brightech-4.png",
   ],
 
   stats: [
@@ -233,9 +241,10 @@ solution:
   result: "Complete Agency Identity",
 
   gallery: [
-    "/images/projects/pixelgrowth.png",
-    "/images/projects/pixelgrowth.png",
-    "/images/projects/pixelgrowth.png",
+    "/images/projects/pixelgrowth-1.png",
+    "/images/projects/pixelgrowth-2.png",
+    "/images/projects/pixelgrowth-3.png",
+    "/images/projects/pixelgrowth-4.png",
   ],
 
   stats: [
@@ -306,9 +315,10 @@ solution:
   result: "Strong Community Presence",
 
   gallery: [
-    "/images/projects/hrck.png",
-    "/images/projects/hrck.png",
-    "/images/projects/hrck.png",
+    "/images/projects/hrck-1.png",
+    "/images/projects/hrck-2.png",
+    "/images/projects/hrck-3.png",
+    "/images/projects/hrck-4.png",
   ],
 
   stats: [
