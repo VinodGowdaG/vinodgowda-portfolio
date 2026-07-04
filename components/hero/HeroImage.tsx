@@ -45,10 +45,13 @@ export default function HeroImage() {
       initial={{ opacity: 0, x: 60 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
-      className="relative flex items-center justify-center"
+      className="relative flex flex-col items-center justify-center"
     >
-      {/* Top Left Card */}
-      <div className="absolute -left-16 top-12 z-20">
+      {/* ===========================
+          Desktop Floating Cards
+      ============================ */}
+
+      <div className="absolute -left-16 top-12 z-20 hidden lg:block">
         <FloatingCard
           title="Projects Completed"
           value={120}
@@ -56,8 +59,7 @@ export default function HeroImage() {
         />
       </div>
 
-      {/* Bottom Left Card */}
-      <div className="absolute -left-16 bottom-20 z-20">
+      <div className="absolute -left-16 bottom-20 z-20 hidden lg:block">
         <FloatingCard
           title="Years Experience"
           value={5}
@@ -65,8 +67,7 @@ export default function HeroImage() {
         />
       </div>
 
-      {/* Bottom Right Card */}
-      <div className="absolute -right-16 bottom-28 z-20">
+      <div className="absolute -right-16 bottom-28 z-20 hidden lg:block">
         <FloatingCard
           title="Happy Clients"
           value={40}
@@ -75,9 +76,11 @@ export default function HeroImage() {
       </div>
 
       {/* Background Glow */}
-      <div className="absolute h-[500px] w-[500px] rounded-full bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 opacity-20 blur-3xl" />
 
-      {/* Rotating Gradient Ring */}
+      <div className="absolute h-[420px] w-[420px] rounded-full bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 opacity-20 blur-3xl lg:h-[500px] lg:w-[500px]" />
+
+      {/* Gradient Ring */}
+
       <motion.div
         animate={{ rotate: 360 }}
         transition={{
@@ -85,24 +88,23 @@ export default function HeroImage() {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="absolute h-[430px] w-[330px] rounded-[40px] bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 p-[3px]"
+        className="absolute h-[330px] w-[250px] rounded-[34px] bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 p-[3px] lg:h-[430px] lg:w-[330px]"
       >
-        <div className="h-full w-full rounded-[38px] bg-[#030712]" />
+        <div className="h-full w-full rounded-[32px] bg-[#030712]" />
       </motion.div>
 
-      {/* Profile Image with Parallax */}
+      {/* Profile */}
+
       <motion.div
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        whileHover={{
-          scale: 1.03,
-        }}
+        whileHover={{ scale: 1.03 }}
         style={{
           rotateX: springRotateX,
           rotateY: springRotateY,
           transformPerspective: 1000,
         }}
-        className="relative overflow-hidden rounded-[36px] border border-white/10 bg-white/5 p-3 backdrop-blur-xl shadow-2xl"
+        className="relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 p-3 backdrop-blur-xl shadow-2xl"
       >
         <Image
           src="/images/profile/profile.png"
@@ -110,9 +112,45 @@ export default function HeroImage() {
           width={320}
           height={420}
           priority
-          className="h-auto w-full rounded-[28px] object-cover"
+          className="w-[250px] rounded-[24px] object-cover lg:w-[320px]"
         />
       </motion.div>
+
+      {/* ===========================
+          Mobile Stats
+      ============================ */}
+
+      <div className="mt-8 grid w-full max-w-sm grid-cols-3 gap-3 lg:hidden">
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center backdrop-blur-xl">
+          <h3 className="text-2xl font-bold text-cyan-400">
+            120+
+          </h3>
+
+          <p className="mt-1 text-xs text-gray-400">
+            Projects
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center backdrop-blur-xl">
+          <h3 className="text-2xl font-bold text-cyan-400">
+            5+
+          </h3>
+
+          <p className="mt-1 text-xs text-gray-400">
+            Years
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center backdrop-blur-xl">
+          <h3 className="text-2xl font-bold text-cyan-400">
+            40+
+          </h3>
+
+          <p className="mt-1 text-xs text-gray-400">
+            Clients
+          </p>
+        </div>
+      </div>
     </motion.div>
   );
 }
