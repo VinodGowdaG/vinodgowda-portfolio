@@ -10,6 +10,7 @@ import AuroraBackground from "@/components/ui/AuroraBackground";
 import BackToTop from "@/components/ui/BackToTop";
 import { ActiveSectionProvider } from "@/components/context/ActiveSectionContext";
 import { Toaster } from "sonner";
+import StructuredData from "@/components/seo/StructuredData";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -132,6 +133,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${space.variable} bg-[#030712] text-white antialiased`}
       >
+
+        <StructuredData />
+
         <AuroraBackground />
 
         <CustomCursor />
