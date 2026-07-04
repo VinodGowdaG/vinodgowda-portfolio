@@ -1,41 +1,72 @@
 "use client";
 
-import { motion } from "framer-motion";
+import MagneticButton from "@/components/ui/MagneticButton";
+import TextReveal from "@/components/ui/TextReveal";
+import TypingText from "./TypingText";
 
 export default function HeroContent() {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: -60 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <span className="rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-sm text-blue-400">
-        Creative Digital Professional
-      </span>
+    <div>
 
-      <h1 className="mt-8 text-6xl font-bold leading-tight text-white lg:text-8xl">
-        Hi, I'm
-        <br />
-        <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-500 bg-clip-text text-transparent">
-          Vinodgowda G
+      <TextReveal delay={0.1}>
+        <span className="rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-sm text-blue-400">
+          Creative Digital Professional
         </span>
-      </h1>
+      </TextReveal>
 
-      <p className="mt-8 max-w-xl text-xl leading-9 text-gray-400">
-        Helping businesses grow through branding,
-        graphic design, websites, digital marketing,
-        and creative strategies.
-      </p>
+      <TextReveal delay={0.3}>
+        <h1 className="mt-8 text-6xl font-bold leading-tight text-white lg:text-8xl">
+          Hi, I'm
+          <br />
+          <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            Vinodgowda G
+            <div className="mt-6">
+    <TypingText />
+</div>
+          </span>
+        </h1>
+      </TextReveal>
 
-      <div className="mt-10 flex flex-wrap gap-5">
-        <button className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white transition hover:scale-105 hover:bg-blue-700">
-          View Portfolio
-        </button>
+      <TextReveal delay={0.5}>
+        <p className="mt-8 max-w-xl text-lg leading-9 text-gray-400">
+Helping businesses build modern brands through creative design,
+website development, digital marketing and strategic solutions.
+</p>
+      </TextReveal>
 
-        <button className="rounded-xl border border-white/20 px-8 py-4 text-white transition hover:bg-white/10">
-          Download Resume
-        </button>
-      </div>
-    </motion.div>
+      <TextReveal delay={0.7}>
+        <div className="mt-10 flex flex-wrap gap-5">
+          <MagneticButton href="#projects">
+  🚀 View My Work
+</MagneticButton>
+
+<MagneticButton href="#contact" primary={false}>
+  📩 Contact Me
+</MagneticButton>
+          
+        </div>
+      </TextReveal>
+
+      <TextReveal delay={0.9}>
+        <div className="mt-10 flex flex-wrap gap-3">
+          {[
+            "Next.js",
+            "React",
+            "UI/UX",
+            "Branding",
+            "SEO",
+            "Digital Marketing",
+          ].map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-300 backdrop-blur-xl"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+      </TextReveal>
+
+    </div>
   );
 }

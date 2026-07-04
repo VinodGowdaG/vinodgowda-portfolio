@@ -25,3 +25,45 @@ h5,
 h6 {
   font-family: var(--font-space), sans-serif;
 }
+
+/* Hide Default Cursor */
+
+html,
+body,
+a,
+button,
+input,
+textarea {
+  cursor: none;
+}
+
+::selection {
+  background: #06b6d4;
+  color: white;
+}
+
+::-moz-selection {
+  background: #06b6d4;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #06b6d4;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0891b2;
+}

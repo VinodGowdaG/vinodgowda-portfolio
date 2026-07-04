@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import SectionObserver from "@/components/ui/SectionObserver";
 
 const skills = [
   { name: "Graphic Design", value: 95 },
@@ -14,6 +15,7 @@ const skills = [
 export default function Skills() {
   return (
     <section id="skills" className="bg-[#030712] py-28">
+      <SectionObserver id="skills" />
       <div className="mx-auto max-w-7xl px-6">
         <p className="uppercase tracking-[5px] text-blue-400">
           My Skills

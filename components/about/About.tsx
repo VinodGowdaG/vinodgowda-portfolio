@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { Award, Briefcase, Code2, Palette } from "lucide-react";
 
+import SectionObserver from "@/components/ui/SectionObserver";
+
 const cards = [
   {
     icon: <Palette className="h-8 w-8 text-blue-400" />,
@@ -32,6 +34,8 @@ export default function About() {
       id="about"
       className="bg-[#050816] py-28"
     >
+      <SectionObserver id="about" />
+      
       <div className="mx-auto max-w-7xl px-6">
 
         <motion.div
