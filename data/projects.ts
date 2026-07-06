@@ -215,7 +215,7 @@ solution:
 
   filter: "Branding",
 
-  image: "/images/projects/pixelgrowth.png",
+  image: "/images/projects/pixelgrowthstudio.png",
 
   heroImage: "/images/projects/pixelgrowth-banner.png",
 
