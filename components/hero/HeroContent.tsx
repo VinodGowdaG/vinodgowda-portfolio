@@ -50,12 +50,17 @@ website development, digital marketing and strategic solutions.
       <TextReveal delay={0.9}>
         <div className="mt-10 flex flex-wrap gap-3">
           {[
+            "HTML",
+            "CSS",
+            "JavaScript", 
             "Next.js",
             "React",
             "UI/UX",
             "Branding",
             "SEO",
             "Digital Marketing",
+            "Figma",
+            "GitHub",
           ].map((item) => (
             <span
               key={item}

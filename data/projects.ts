@@ -202,7 +202,7 @@ solution:
       "The website and catalogue significantly improved our brand image and customer engagement.",
   },
 
-  live: "#",
+  live: "https://brightechindia.com/",
 },
 {
   id: 4,
@@ -236,6 +236,8 @@ solution:
     "Figma",
     "Branding",
     "SEO",
+    "Website Development",
+    "Digital Marketing",
   ],
 
   result: "Complete Agency Identity",
@@ -276,7 +278,7 @@ solution:
       "The final website perfectly represents our creative vision and professionalism.",
   },
 
-  live: "#",
+  live: "https://pixelgrowthstudio.com/",
 },
 
 {
@@ -310,6 +312,9 @@ solution:
     "Photoshop",
     "Illustrator",
     "Branding",
+    "Social Media Management",
+  "Event Marketing",
+
   ],
 
   result: "Strong Community Presence",
@@ -350,6 +355,6 @@ solution:
       "Our branding now reflects the spirit and passion of our riding community.",
   },
 
-  live: "#",
+  live: "https://www.royalenfield.com/ph/en/motorcycles/himalayan/",
 },
 ]
